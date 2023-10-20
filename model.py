@@ -7,7 +7,8 @@ from transformers import AutoConfig, AutoModelForCausalLM, AutoTokenizer, TextIt
 #model_id = 'codellama/CodeLlama-13b-Instruct-hf'
 #model_id = 'TheBloke/CodeLlama-13B-Instruct-GPTQ'
 #model_id = 'TheBloke/Phind-CodeLlama-34B-v2-GPTQ'
-model_id = '/root/autodl-fs/huggingface/TheBloke/Phind-CodeLlama-34B-v2-GPTQ'
+#model_id = '/root/autodl-fs/huggingface/TheBloke/Phind-CodeLlama-34B-v2-GPTQ'
+model_id = 'TheBloke/Phind-CodeLlama-34B-v2-GPTQ'
 if torch.cuda.is_available():
     config = AutoConfig.from_pretrained(model_id)
     config.pretraining_tp = 1
